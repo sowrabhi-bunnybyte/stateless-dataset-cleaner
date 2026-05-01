@@ -1,0 +1,185 @@
+/* =========================
+   BASE STYLES (existing)
+   ========================= */
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+}
+
+.container {
+  width: 420px;
+  margin: 80px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   PREVIEW SECTION
+   ========================= */
+
+.preview-container {
+  margin-top: 30px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.preview-header h2 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.preview-actions button {
+  width: auto;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #1f2937;
+}
+
+/* Scrollable preview window */
+.preview-table-wrapper {
+  max-height: 220px;
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.preview-table th,
+.preview-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.preview-table th {
+  background: #f3f4f6;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* =========================
+   FULLSCREEN MODAL
+   ========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h2 {
+  margin: 0 0 10px 0;
+}
+
+.modal-table-wrapper {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+/* =========================
+   CHARTS SECTION
+   ========================= */
+
+.charts-section {
+  margin-top: 40px;
+}
+
+.charts-section h2 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.chart-card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.chart-card h3 {
+  font-size: 13px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* =========================
+   SECONDARY BUTTON
+   ========================= */
+
+.secondary-button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.secondary-button:hover {
+  background: #d1d5db;
+}
